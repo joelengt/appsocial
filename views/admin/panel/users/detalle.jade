@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Admin Usuarios
+	link(rel="stylesheet", href="../../../../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/admin/panel/users")
+					figure
+						img(src="../../../../images/logo.png", width="43")
+					h1 SocialApp
+			div(class="Header-Main__user")
+				nav
+					ul
+						li
+							a(href="/admin/panel/users", class="menu__navs") Ver Usuarios
+						li
+							a(href="/admin/panel/msgs", class="menu__navs") Ver Mensajes
+				
+	section(class="User-Perfil")
+		p #{msg}
+		div(class="User-Perfil__box")
+			div(class="User-Perfil__data")
+				h2 Detalles de Usuario:
+				img(src="#{user.photo}", width="150")
+				div(class="data__info")
+					h3(class="User-Perfil__name") Nombre: #{user.name}
+					span
+						strong Nickname:
+						p #{user.nickname}
+					span
+						strong Edad:
+						p #{user.age}
+					span
+						strong Descripcion:
+						p #{user.description}
+					span
+						strong Id_Proveedor:
+						p #{user.provider_id}
+					span
+						strong Proveedor:
+						p #{user.provider}
+					span
+						strong Id DataBase:
+						p #{user._id}
+					span
+						strong Fecha Registro to App:
+						p #{user.createdAt} 
+			
+			div(class="Admin-panel-user-actions")
+				span(class="Admin-panel-user-actions__update")
+					form(action="/admin/panel/users/update/#{user._id}", method="post")
+						button Update Data User
+				span(class="Admin-panel-user-actions__delete")
+					h2 ¿Borrar Usuario?
+					form(action="/admin/panel/users/delete/#{user._id}?_method=delete", method="post")
+						label Escribe el Id DataBase para Confirmar
+						input(type="text", name="name_confirme")
+						div
+							button Delete User

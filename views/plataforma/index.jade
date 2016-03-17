@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title SocialApp
+	link(rel="stylesheet", href="./css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/plataforma")
+					figure
+						img(src="./images/logo.png", width="43")
+					h1 SocialApp
+
+			div(class="Header-Main__user")
+				figure
+					img(src="#{user.photo}", width="50")
+				p #{user.name}
+				a(href="#", id="btn__menu__open") V
+				a(href="#", id="btn__menu__close", style="display: none") X
+	div(class="user__menu")
+		ul
+			li
+				a(href="/plataforma/about-me/#{user._id}") Mi Perfil
+			li
+				a(href="/plataforma/chat-social") Chat Social
+			li
+				a(href="/logout") Salir
+	
+	secetion(class="plataforma-road-Main")
+		div(class="plataforma-road-Main__box")
+			h1 ¿Que Quiere hacer hoy?
+			article
+				a(href="/plataforma/chat-social") Chatear con Amigos
+			article
+				a(href="/plataforma/personajes") Publicar Personajes
+
+script(type="text/javascript", src="../js/menu.js")

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Ingresa al Chat con tus Redes Sociales
+	link(rel="stylesheet", href="./css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/")
+					figure
+						img(src="./images/logo.png", width="43")
+					h1 SocialApp
+
+	section(class="Login-Social-Form")
+		div(class="Login-Social-Form__box")
+			h2 Ingresa con tus redes sociales
+			a(class="btn-social  color-blue", href="auth/facebook") Facebook
+			a(class="btn-social  color-skyblue", href="auth/twitter") Twitter
+
+			p #{msg}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Welcome to Chat
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="../css/style_chat.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/")
+					figure
+						img(src="../../images/logo.png", width="43")
+					h1 SocialApp
+			div(class="Header-Main__user")
+				nav
+					ul
+						li
+							a(href="/login-social", class="menu__navs") Probar App Personajes
+
+	h1(class="title") Welcome #{user} to Chat with friends
+	div
+		form(action="", id="form_chat")
+			input(type="text", value="", placeholder="Tu Nombre de Usuario", id="user_name", autocomplete="off", required)
+			input(type="text", id="message", placeholder="Escribe un mensaje a tus amigos", autocomplete="off", required)
+			button Enviar
+
+		ul(id="messages")
+			each message in messages
+				li 
+					strong(style="color:#{message.colorName};") #{message.user}: 
+						span(style="color:black;") #{message.msg}
+
+script(src="https://cdn.socket.io/socket.io-1.2.0.js")
+script(src="http://code.jquery.com/jquery-1.11.1.js")
+script(type="text/javascript", src="../js/chat_client.js")
+

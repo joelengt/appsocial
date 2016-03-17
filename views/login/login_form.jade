@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Login
+	link(rel="stylesheet", href="../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/")
+					figure
+						img(src="../images/logo.png", width="43")
+					h1 SocialApp
+	
+	section(class="Login__admin")
+		div(class="Login__admin__box")
+			h2 Ingresar al Chat Normal
+			p(class="Login__msg") #{msg}
+			form(action="/plataforma/chat-normal", method="post")
+				div
+					label Usuario
+					input(type="text", name="nombre")
+				div
+					label Contraseña
+					input(type="password", name="clave")
+				button Entrar
+			span
+				strong Datos de Test para ingresar
+				div
+					strong Usuario: 
+					p admin
+				div
+					strong Clave:
+					p 12345678

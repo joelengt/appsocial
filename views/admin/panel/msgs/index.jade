@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	link(rel="stylesheet", href="../../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/admin/login")
+					figure
+						img(src="../../images/logo.png", width="43")
+					h1 SocialApp
+			div(class="Header-Main__user")
+				nav
+					ul
+						li
+							a(href="/admin/panel/users", class="menu__navs") Ver Usuarios
+	
+	section(class="Admin-panel-mensajes")
+		div(class="Admin-panel-mensajes__box")
+			h2 Admin Mensajes
+			ul(id="messages", class="msgs__list")
+				each message in messages
+					li
+						div(class="Mensajes__top")
+							span(class="Mensajes__top--user")
+								img(src="#{message.avatar}", width="20") 
+								strong #{message.name}
+							span(class="Mensajes__top--close")
+								form(action="/admin/panel/msgs/delete/#{message._id}?_method=delete", method="post")
+									button X
+						div(class="Mensajes__bottom")
+							p #{message.msg}
+
+script(src="https://cdn.socket.io/socket.io-1.2.0.js")
+script(src="http://code.jquery.com/jquery-1.11.1.js")
+script(type="text/javascript", src="../../../js/admin_chat.js")

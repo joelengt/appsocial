@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Admin Login
+	link(rel="stylesheet", href="../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/")
+					figure
+						img(src="../images/logo.png", width="43")
+					h1 SocialApp
+	
+	section(class="Login__admin")
+		div(class="Login__admin__box")
+			h2 Ingresa al Panel de Administrador
+			p #{msg}
+			form(action="/admin/panel", method="post")
+				div
+					label Usuario
+					input(type="text", name="nombre")
+				div
+					label Contraseña
+					input(type="password", name="clave")
+				button Entrar
+	

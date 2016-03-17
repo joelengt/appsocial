@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Welcome to Best Personajes
+	link(rel="stylesheet", href="../../../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/plataforma/personajes")
+					figure
+						img(src="../../../images/logo.png", width="43")
+					h1 SocialApp
+
+			div(class="Header-Main__user")
+				figure
+					img(src="#{user.photo}", width="50")
+				p #{user.name}
+				a(href="#", id="btn__menu__open") V
+				a(href="#", id="btn__menu__close", style="display: none") X
+	div(class="user__menu")
+		ul
+			li
+				a(href="/plataforma/about-me/#{user._id}") Mi Perfil
+			li
+				a(href="/plataforma/chat-social") Chat Social
+			li
+				a(href="/logout") Salir
+	
+	section(class="Personajes-app")
+		div(class="Personajes-app__box")
+			h2 Detalles del Personaje
+
+			div(class="Personajes-app__read")
+				div(class="Personajes-app__read__box", id="pj_item")
+					article(class="Personajes-app__read__item", id="pj_item")
+						div(class="item__title")
+							h2 #{personaje.name}
+						figure(class="item__imagen")
+							img(src="#{personaje.cover}")
+						div(class="item__data")
+							div(class="item__data--rate")
+								p(class="rate__right") 7 Likes
+								p(class="rate__left") 23 Comentarios
+							div(class="item__data--author")
+								strong By:
+								figure
+									img(src="#{personaje.author_avatar}", width="20")
+								p #{personaje.author_name}
+						div(class="item__detalles")
+							p Serie Anime: #{personaje.serie_anime}
+							p Edad: #{personaje.age}
+							p Sexo: #{personaje.sexo}
+						div(class="item__action")
+							form(action="/plataforma/personajes/edit/#{personaje._id}", method="post")
+								button(class="color-blue") Update
+							form(action="/plataforma/personajes/delete/#{personaje._id}", method="post")
+								button(class="color-red") Delete
+
+script(type="text/javascript", src="../../../js/menu.js")
+
+						

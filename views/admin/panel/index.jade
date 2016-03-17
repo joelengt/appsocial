@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Admin Panel
+	link(rel="stylesheet", href="../../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/admin/login")
+					figure
+						img(src="../../images/logo.png", width="43")
+					h1 SocialApp
+
+	secetion(class="Admin-panel-select")
+		div(class="Admin-panel-select__box")
+			h2 ¿Que desea Administrar?
+			article
+				form(action="/admin/panel/users", method="get")
+					button Administrar Usuarios
+			article
+				form(action="/admin/panel/msgs", method="get")
+					button Administrar Mensajes
+
+script(type="text/javascript", src="../js/menu.js")

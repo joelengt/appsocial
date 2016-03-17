@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Admin Usuarios
+	link(rel="stylesheet", href="../../../../css/main.css")
+
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/admin/panel/users")
+					figure
+						img(src="../../../../images/logo.png", width="43")
+					h1 SocialApp
+			div(class="Header-Main__user")
+				nav
+					ul
+						li
+							a(href="/admin/panel/users", class="menu__navs") Ver Usuarios
+						li
+							a(href="/admin/panel/msgs", class="menu__navs") Ver Mensajes
+
+	section(class="User-Perfil")
+		span(class="User-Perfil__msg") #{msg}
+		div(class="User-Perfil__box")
+			div(class="User-Perfil__data")
+				h2 Editar Perfil
+				img(src="#{user.photo}", width="150")
+
+				form(action="/admin/panel/users/update/#{user._id}?_method=put", method="post", enctype="multipart/form-data")
+					div
+						label Cambiar imagen
+						input(type="file", name="avatar_perfil")
+					div
+						label Cambiar Nombre (*)
+						input(type="text", value="#{user.name}", name="name", autocomplete="off", required)
+					div
+						label Cambiar Nickname (*)
+						input(type="text", value="#{user.nickname}", name="nickname",  autocomplete="off")
+					div
+						label Cambiar Edad
+						input(type="text", value="#{user.age}", name="age",  autocomplete="off")
+					div
+						label Cambiar Descripcion
+						input(type="text", value="#{user.description}", name="description",  autocomplete="off")
+					button Guardar Cambios
+					p (*) Estos campos son Obligatorios

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Welcome to Chat
+	link(rel="stylesheet", href="../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/plataforma")
+					figure
+						img(src="../images/logo.png", width="43")
+					h1 SocialApp
+
+			div(class="Header-Main__user")
+				figure
+					img(id="user_avatar", src="#{user.photo}", width="50")
+				p(id="user_name", value="#{user.name}") #{user.name}
+				a(href="#", id="btn__menu__open") V
+				a(href="#", id="btn__menu__close", style="display: none") X
+	div(class="user__menu")
+		ul
+			li
+				a(href="/plataforma/about-me/#{user._id}") Mi Perfil
+			li
+				a(href="/logout") Salir
+
+	section(class="Chat-Social")
+		div(class="Chat-Social__box")
+			div(class="Chat-Social__form")
+				h2 Chat Room Social
+				form(action="", id="form_chat")
+					input(type="text", id="message", placeholder="Tu mensaje", autocomplete="off")
+					button Enviar
+
+			div(class="Chat-Social__msgs")
+				ul(id="messages", class="msgs__list")
+					each message in messages
+						li(class="msgs__item") 
+							div(class="msgs__item__avatar")
+								a(class="avatar_event", value="#{message.name}")
+									img(src="#{message.avatar}", width="35") 
+								strong #{message.name}
+
+							div(class="msgs__item__charla")
+								p #{message.msg}
+
+script(src="https://cdn.socket.io/socket.io-1.2.0.js")
+script(src="http://code.jquery.com/jquery-1.11.1.js")
+script(type="text/javascript", src="../js/chat_social.js")
+script(type="text/javascript", src="../../js/menu.js")

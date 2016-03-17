@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	link(rel="stylesheet", href="../../css/main.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/admin/panel/users")
+					figure
+						img(src="../../images/logo.png", width="43")
+					h1 SocialApp
+			div(class="Header-Main__user")
+				nav
+					ul
+						li
+							a(href="/admin/panel/msgs", class="menu__navs") Ver Mensajes
+
+	section(class="Admin-panel-Users")
+		div(class="Admin-panel-Users__box")
+			ul
+				each user in users
+					li
+						div(class="Admin-panel-Users__top")
+							span(class="Admin-panel-Users__top--user")
+								img(src="#{user.photo}", width="50")
+								h3 #{user.name}
+							span(class="Admin-panel-Users__top--data")
+								form(action="/admin/panel/users/detalle/#{user._id}", method="post")
+									button Ver Detalles
+						
+						div(class="Admin-panel-Users__bottom")
+							span
+								strong Nickname:
+								p #{user.nickname}
+							span
+								strong Proveedor:
+								p #{user.provider}

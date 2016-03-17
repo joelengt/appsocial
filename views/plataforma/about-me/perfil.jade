@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title EpicApp
+	link(rel="stylesheet", href="../../css/main.css")
+
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/plataforma")
+					figure
+						img(src="../../images/logo.png", width="43")
+					h1 SocialApp
+
+			div(class="Header-Main__user")
+				figure
+					img(id="user_avatar", src="#{user.photo}", width="50")
+				p(value="#{user.name}", id="user_name") #{user.name}
+				a(href="#", id="btn__menu__open") V
+				a(href="#", id="btn__menu__close", style="display: none") X
+	div(class="user__menu")
+		ul
+			li
+				a(href="/plataforma/chat-social") Chat Social
+			li
+				a(href="/logout") Salir
+
+	section(class="User-Perfil")
+		p #{msg}
+		div(class="User-Perfil__box")
+			div(class="User-Perfil__data")
+				h2 Mi Perfil
+				img(src="#{user.photo}", width="150")
+				div(class="data__info")
+					h3(class="User-Perfil__name") Nombre: #{user.name}
+					span
+						strong Nickname:
+						p  #{user.nickname}
+					span
+						strong Edad:
+						p  #{user.age}
+					span
+						strong Descripcion:
+						p  #{user.description}
+			
+			div(class="User-Perfil__form")
+				form(action="/plataforma/about-me/edit/#{user._id}", method="post")
+					button Editar Perfil
+
+script(type="text/javascript", src="../../js/menu.js")

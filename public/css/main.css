@@ -1,0 +1,1136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+body {
+  background: #fafafa;
+}
+.Header-Main {
+  background: #fff;
+}
+.Header-Main__box {
+  text-aling: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5em;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+.Header-Main__logo {
+  display: inline-block;
+  float: left;
+  margin-left: 0.9em;
+}
+.Header-Main__logo a {
+  text-decoration: none;
+}
+.Header-Main__logo a figure {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header-Main__logo a h1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0bc6d9;
+}
+.Header-Main__user {
+  display: inline-block;
+  float: right;
+  margin-right: 0.8em;
+}
+.Header-Main__user figure {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+.Header-Main__user figure img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.Header-Main__user p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+.Header-Main__user a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  text-decoration: none;
+}
+.Header-Main__user nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+.Header-Main__user nav ul li .menu__navs {
+  text-decoration: none;
+  color: #0bc6d9;
+  display: block;
+  padding: 1rem;
+}
+.Header-Main__user nav ul li .menu__navs:hover {
+  background: #0bc6d9;
+  color: #fff;
+}
+.user__menu {
+  display: none;
+  background: #0bc6d9;
+  width: 200px;
+  float: right;
+}
+.user__menu ul {
+  text-align: center;
+}
+.user__menu ul li {
+  list-style: none;
+}
+.user__menu ul li a {
+  display: block;
+  text-aling: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem;
+}
+.user__menu ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+.Login-Social-Form__box {
+  background: #fff;
+  text-align: center;
+  margin: 3em auto;
+  padding: 1rem;
+  max-width: 700px;
+}
+.Login-Social-Form h2 {
+  text-align: center;
+  color: #282828;
+}
+.Login-Social-Form .btn-social {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #00f;
+  padding: 1rem;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin: 1.5em auto;
+  width: 300px;
+}
+.Login-Social-Form .btn-social.color-blue {
+  background: #3333c2;
+}
+.Login-Social-Form .btn-social.color-skyblue {
+  background: #59c7f3;
+}
+.plataforma-road-Main__box {
+  display: block;
+  max-width: 700px;
+  background: #fff;
+  margin: 5rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+.plataforma-road-Main article {
+  margin: 1rem auto;
+}
+.plataforma-road-Main article a {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  background: #0bc6da;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+.Chat-Social__box {
+  text-align: center;
+  display: block;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+}
+.Chat-Social__form {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Chat-Social__form h2 {
+  padding-bottom: 0.8rem;
+  font-size: 2rem;
+}
+.Chat-Social__form form input[type="text"] {
+  display: inline-block;
+  padding: 0.9rem;
+  font-size: 1rem;
+  width: 70%;
+}
+.Chat-Social__form form button {
+  display: inline-block;
+  padding: 1.1rem;
+  width: 10%;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background: #0bc6d9;
+}
+.Chat-Social__msgs {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.Chat-Social__msgs .msgs__list {
+  display: block;
+  text-align: center;
+}
+.Chat-Social__msgs .msgs__list .msgs__item {
+  list-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #fbfbfb;
+  border-bottom: 1px solid #dedede;
+  padding-left: 2.5rem;
+}
+.Chat-Social__msgs .msgs__list .msgs__item .msgs__item__avatar {
+  display: block;
+  text-align: left;
+}
+.Chat-Social__msgs .msgs__list .msgs__item .msgs__item__avatar img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.Chat-Social__msgs .msgs__list .msgs__item .msgs__item__avatar img:hover {
+  cursor: pointer;
+}
+.Chat-Social__msgs .msgs__list .msgs__item .msgs__item__avatar strong {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.Chat-Social__msgs .msgs__list .msgs__item .msgs__item__charla {
+  display: block;
+  text-align: left;
+  padding-left: 2.5rem;
+}
+.Chat-Social__msgs .msgs__list .msgs__item .msgs__item__charla p {
+  text-align: left;
+  padding-left: 0.1rem;
+}
+.Personajes-app__box {
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.Personajes-app__form {
+  background: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Personajes-app__form h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Personajes-app__form p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.Personajes-app__form form {
+  display: block;
+  background: #f7f7f7;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.7rem;
+}
+.Personajes-app__form form div {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
+.Personajes-app__form form div label {
+  display: block;
+  text-align: left;
+  margin-left: 0.6rem;
+}
+.Personajes-app__form form div input {
+  display: block;
+  padding: 0.7rem;
+  font-size: 1rem;
+  width: 90%;
+  margin-left: 0.6rem;
+}
+.Personajes-app__form form button {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border: none;
+  background: #51ea57;
+  color: #fff;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.Personajes-app .Personajes-app__read__box {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.Personajes-app .Personajes-app__read__item {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 3rem;
+}
+.Personajes-app .Personajes-app__read__item .item__title {
+  padding: 1rem;
+}
+.Personajes-app .Personajes-app__read__item .item__title h2 {
+  font-size: 1.5rem;
+}
+.Personajes-app .Personajes-app__read__item .item__imagen img {
+  max-width: 100%;
+}
+.Personajes-app .Personajes-app__read__item .item__data {
+  display: block;
+  padding-top: 0.6rem;
+  overflow: hidden;
+  padding-bottom: 0.6rem;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--rate {
+  margin-left: 3.5rem;
+  float: left;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--rate .rate__right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--rate .rate__right span {
+  font-family: 'Arial', sans-serif;
+  margin-right: 0.2rem;
+  color: #3a3a3a;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--rate .rate__left {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--rate .rate__left span {
+  font-family: 'Arial', sans-serif;
+  margin-right: 0.2rem;
+  color: #3a3a3a;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--author {
+  margin-right: 3.5rem;
+  float: right;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--author strong {
+  display: inline-block;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--author figure {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--author figure img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.Personajes-app .Personajes-app__read__item .item__data .item__data--author p {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+.Personajes-app .Personajes-app__read__item .item__detalles {
+  display: block;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin: 0 auto;
+  width: 40%;
+}
+.Personajes-app .Personajes-app__read__item .item__detalles span {
+  display: block;
+  text-align: left;
+}
+.Personajes-app .Personajes-app__read__item .item__detalles span strong {
+  display: inline-block;
+}
+.Personajes-app .Personajes-app__read__item .item__detalles span p {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.Personajes-app .Personajes-app__read__item .item__action {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #e1dfdf;
+  width: 90%;
+  margin: 0 auto;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--like {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  width: 25px;
+  margin-right: 1.5rem;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--like a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--like a.color-gray {
+  color: #a7a5a5;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--like a.color-red {
+  color: #f00;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--comment {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  width: 74%;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--comment input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: none;
+  margin-right: 1rem;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--settings {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  width: 25px;
+}
+.Personajes-app .Personajes-app__read__item .item__action .action--settings a {
+  text-decoration: none;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  color: #717171;
+}
+@media (min-width: 1000px) {
+  .Personajes-app__box {
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  .Personajes-app__form {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .Personajes-app__form h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  .Personajes-app__form p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .Personajes-app__form form {
+    display: block;
+    background: #f7f7f7;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.7rem;
+  }
+  .Personajes-app__form form div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.8rem;
+  }
+  .Personajes-app__form form div label {
+    display: block;
+    text-align: left;
+    margin-left: 0.6rem;
+  }
+  .Personajes-app__form form div input {
+    display: block;
+    padding: 0.7rem;
+    font-size: 1rem;
+    width: 90%;
+    margin-left: 0.6rem;
+  }
+  .Personajes-app__form form button {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border: none;
+    background: #51ea57;
+    color: #fff;
+    padding: 0.7rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .Personajes-app .Personajes-app__read__box {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .Personajes-app .Personajes-app__read__item {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__title {
+    padding: 1rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__title h2 {
+    font-size: 1.5rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__imagen img {
+    max-width: 100%;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data {
+    display: block;
+    padding-top: 0.6rem;
+    overflow: hidden;
+    padding-bottom: 0.6rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--rate {
+    margin-left: 3.5rem;
+    float: left;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--rate .rate__right {
+    display: inline-block;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--rate .rate__left {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--author {
+    margin-right: 3.5rem;
+    float: right;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--author strong {
+    display: inline-block;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--author figure {
+    display: inline-block;
+    margin-left: 0.3rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--author figure img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .Personajes-app .Personajes-app__read__item .item__data .item__data--author p {
+    display: inline-block;
+    margin-left: 0.3rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__detalles {
+    display: block;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin: 0 auto;
+    width: 40%;
+  }
+  .Personajes-app .Personajes-app__read__item .item__detalles span {
+    display: block;
+    text-align: left;
+  }
+  .Personajes-app .Personajes-app__read__item .item__detalles strong {
+    display: inline-block;
+  }
+  .Personajes-app .Personajes-app__read__item .item__detalles p {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #e1dfdf;
+    width: 89%;
+    margin: 0 auto;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action .action--like {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+    width: 25px;
+    margin-right: 1.5rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action .action--like a {
+    text-decoration: none;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action .action--comment {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+    width: 82%;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action .action--comment input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action .action--settings {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+    width: 25px;
+    margin-left: 1rem;
+  }
+  .Personajes-app .Personajes-app__read__item .item__action .action--settings a {
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+}
+.Personajes-app__read__item .item__action form {
+  display: inline-block;
+}
+.Personajes-app__read__item .item__action form button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  margin: 0.5rem;
+}
+.Personajes-app__read__item .item__action form button.color-blue {
+  background: #3737f0;
+}
+.Personajes-app__read__item .item__action form button.color-red {
+  background: #ff3d3d;
+}
+.Personajes-app__Update {
+  background: #fff;
+}
+.Personajes-app__Update .Update__box {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+.Personajes-app__Update .Update__box h2 {
+  display: block;
+  padding-top: 0.5rem;
+}
+.Personajes-app__Update .Update__box form {
+  background: #fafafa;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 700px;
+  margin: 1rem auto;
+}
+.Personajes-app__Update .Update__box form div {
+  display: block;
+  margin: 1rem;
+}
+.Personajes-app__Update .Update__box form div label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.Personajes-app__Update .Update__box form div input {
+  display: block;
+  width: 90%;
+  padding: 1rem;
+}
+.Personajes-app__Update .Update__box form button {
+  display: block;
+  margin: 0 auto;
+  padding: 1.3rem 3rem;
+  border: none;
+  color: #fff;
+  background: #3737f0;
+  cursor: pointer;
+}
+.Personajes-app__Update .Update__box form p {
+  padding-top: 1.5rem;
+}
+.Personajes-app__Delete {
+  background: #fff;
+}
+.Personajes-app__Delete .Delete__box {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+.Personajes-app__Delete .Delete__box h2 {
+  display: block;
+}
+.Personajes-app__Delete .Delete__box form {
+  background: #fafafa;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 700px;
+  margin: 1rem auto;
+}
+.Personajes-app__Delete .Delete__box form div {
+  display: block;
+  margin: 1rem;
+}
+.Personajes-app__Delete .Delete__box form div label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.Personajes-app__Delete .Delete__box form div input {
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.Personajes-app__Delete .Delete__box form button {
+  display: block;
+  margin: 0 auto;
+  padding: 1.3rem 3rem;
+  border: none;
+  color: #fff;
+  background: #f44336;
+  cursor: pointer;
+}
+.User-Perfil__box {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.User-Perfil__data {
+  display: block;
+  text-align: center;
+}
+.User-Perfil__data h2 {
+  font-size: 2rem;
+}
+.User-Perfil__data img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.User-Perfil__data .data__info {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.User-Perfil__data .data__info h3 {
+  text-align: left;
+  padding-top: 0.5rem;
+}
+.User-Perfil__data .data__info span {
+  display: block;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+.User-Perfil__data .data__info span strong {
+  display: inline-block;
+  text-align: left;
+}
+.User-Perfil__data .data__info span p {
+  display: inline-block;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+.User-Perfil__form {
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+}
+.User-Perfil__form form button {
+  padding: 1rem 7rem;
+  font-size: 1rem;
+  background: #0bc6d9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.User-Perfil__data form {
+  padding-bottom: 2rem;
+  width: 42%;
+  margin: 0 auto;
+}
+.User-Perfil__data form div {
+  display: block;
+  padding-bottom: 1.3rem;
+}
+.User-Perfil__data form div label {
+  display: block;
+  text-align: left;
+  padding-bottom: 0.4rem;
+}
+.User-Perfil__data form div input {
+  display: block;
+  padding: 1rem;
+  text-align: left;
+  width: 90%;
+}
+.User-Perfil__data form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  background: #00f;
+  margin: 0 auto;
+  width: 100%;
+  cursor: pointer;
+}
+.User-Perfil__data form p {
+  padding-top: 1.5rem;
+}
+.User-Perfil__msg {
+  display: block;
+  margin: 1rem auto;
+  max-width: 303px;
+  text-align: center;
+  color: #21ce21;
+}
+.Login__admin__box {
+  background: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.Login__admin__box h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.Login__admin__box .Login__msg {
+  color: #f00;
+}
+.Login__admin__box form {
+  margin: 0 auto;
+  width: 70%;
+}
+.Login__admin__box form div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+.Login__admin__box form div label {
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.Login__admin__box form div input {
+  display: block;
+  padding: 0.7rem;
+  width: 90%;
+}
+.Login__admin__box form button {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: #fff;
+  border: none;
+  background: #5ae85a;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.Login__admin__box span strong {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.Login__admin__box span div strong {
+  display: inline-block;
+}
+.Login__admin__box span div p {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.Admin-panel-select__box {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.Admin-panel-select__box h2 {
+  font-size: 1.5rem;
+}
+.Admin-panel-select__box article {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.Admin-panel-select__box article form button {
+  padding: 1rem;
+  color: #fff;
+  background: #4b67d4;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.Admin-panel-mensajes__box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.Admin-panel-mensajes h2 {
+  display: block;
+  font-size: 2rem;
+}
+.Admin-panel-mensajes ul {
+  display: block;
+}
+.Admin-panel-mensajes ul li {
+  display: block;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+.Admin-panel-mensajes ul li .Mensajes__top {
+  display: block;
+  overflow: hidden;
+}
+.Admin-panel-mensajes ul li .Mensajes__top .Mensajes__top--user {
+  float: left;
+}
+.Admin-panel-mensajes ul li .Mensajes__top .Mensajes__top--user img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Admin-panel-mensajes ul li .Mensajes__top .Mensajes__top--user strong {
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Admin-panel-mensajes ul li .Mensajes__top .Mensajes__top--close {
+  float: right;
+}
+.Admin-panel-mensajes ul li .Mensajes__top .Mensajes__top--close form button {
+  color: #fff;
+  border: none;
+  background: #000;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.Admin-panel-mensajes ul li .Mensajes__bottom {
+  display: block;
+}
+.Admin-panel-mensajes ul li .Mensajes__bottom p {
+  text-align: left;
+  padding-top: 0.5rem;
+  margin-left: 1.8rem;
+}
+.Admin-panel-Users__box {
+  background: #fff;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.Admin-panel-Users__box ul li {
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__top {
+  display: block;
+  overflow: hidden;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__top .Admin-panel-Users__top--user {
+  float: left;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__top .Admin-panel-Users__top--user img {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__top .Admin-panel-Users__top--user h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__top .Admin-panel-Users__top--data {
+  float: right;
+  display: block;
+  padding-top: 1rem;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__top .Admin-panel-Users__top--data form button {
+  border: none;
+  background: #0bc6d9;
+  color: #fff;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__bottom {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__bottom span {
+  display: block;
+  padding-bottom: 0.3rem;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__bottom span strong {
+  display: inline-block;
+}
+.Admin-panel-Users__box ul li .Admin-panel-Users__bottom span p {
+  display: inline-block;
+}
+.Admin-panel-user-actions {
+  margin: 0 auto;
+  text-align: center;
+}
+.Admin-panel-user-actions__update {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.Admin-panel-user-actions__update form {
+  display: block;
+}
+.Admin-panel-user-actions__update form button {
+  display: block;
+  padding: 1.2rem 7rem;
+  background: #00b7ff;
+  border: none;
+  color: #fff;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.Admin-panel-user-actions__delete {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+  margin: 0 auto;
+  border-top: 1px solid #d3d3d3;
+}
+.Admin-panel-user-actions__delete h2 {
+  display: block;
+  padding-bottom: 1rem;
+}
+.Admin-panel-user-actions__delete form {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.Admin-panel-user-actions__delete form label {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+.Admin-panel-user-actions__delete form input {
+  display: block;
+  padding: 0.7rem;
+  width: 100%;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.Admin-panel-user-actions__delete form div {
+  display: block;
+  width: 100%;
+  margin: 1.5rem auto;
+}
+.Admin-panel-user-actions__delete form div button {
+  padding: 1rem 7rem;
+  color: #fff;
+  background: #ff3434;
+  border: none;
+  cursor: pointer;
+}
+.Public-Acceso__box {
+  max-width: 850px;
+  background: #fff;
+  margin: 2rem auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.Public-Acceso__box h1 {
+  display: block;
+  font-size: 2.5rem;
+  color: #2d2d2d;
+}
+.Public-Acceso__box div {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Public-Acceso__box div div {
+  display: block;
+  color: #2d2d2d;
+}
+.Public-Acceso__box div div p {
+  display: block;
+  padding-botom: 0.5rem;
+}
+.Public-Acceso__box div div a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  background: #0bc6d9;
+  width: 60%;
+  margin: 0.5rem auto;
+  text-decoration: none;
+}
+.Public-Acceso__footer {
+  text-align: center;
+  background: #020d15;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+.Public-Acceso__footer a {
+  color: #0bc6d9;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Welcome to Best Personajes
+	link(rel="stylesheet", href="../css/main.css")
+	link(rel="stylesheet", href="../css/fonts.css")
+body
+	header(class="Header-Main")
+		div(class="Header-Main__box")
+			div(class="Header-Main__logo")
+				a(href="/plataforma")
+					figure
+						img(src="../images/logo.png", width="43")
+					h1 SocialApp
+
+			div(class="Header-Main__user")
+				figure
+					img(id="user_avatar", src="#{user.photo}", width="50")
+				p(value="#{user.name}", id="user_name") #{user.name}
+				a(href="#", id="btn__menu__open") V
+				a(href="#", id="btn__menu__close", style="display: none") X
+	div(class="user__menu")
+		ul
+			li
+				a(href="/plataforma/about-me/#{user._id}") Mi Perfil
+			li
+				a(href="/plataforma/chat-social") Chat Social
+			li
+				a(href="/logout") Salir
+
+	section(class="Personajes-app")
+		div(class="Personajes-app__box")
+			div(class="Personajes-app__form")
+				h2 Los Mejores Personajes
+				p Agrega tu Personaje Favorito
+				form(action="", id="Formulario_create", enctype="multipart/form-data")
+					div
+						label Nombre:
+						input(type="text", id="personaje_name", placeholder="Nombre del Personaje", name="name", autocomplete="off", required)
+					div
+						label Serie, Pelicula o Grupo:
+						input(type="text", id="personaje_name_serie_anime", placeholder="El personaje es de...", name="serie_anime", autocomplete="off", required)
+					div
+						label Edad:
+						input(type="text", id="personaje_age", placeholder="Edad del Personaje", name="age", autocomplete="off", required)
+					div
+						label Sexo:
+						input(type="text", id="personaje_sexo",placeholder="¿Chico o Chica?", name="sexo", autocomplete="off", required)
+					div
+						label Url Imagen:
+						input(type="text", id="personaje_cover", placeholder="Pega un Enlace/URL de la imagen del Personaje" name="cover", autocomplete="off", required)
+					//- div
+					//- 	label Selecionar Cover:
+					//- 	input(type="file", id="personaje_imagen", name="cover_file")
+					button Agregar Personaje
+
+			div(class="Personajes-app__read")
+				div(class="Personajes-app__read__box", id="pj_item")
+				each personaje in personajes
+					article(class="Personajes-app__read__item")
+						div(class="item__title")
+							h2 #{personaje.name}
+						figure(class="item__imagen")
+							img(src="#{personaje.cover}")
+						div(class="item__data")
+							div(class="item__data--rate")
+								p(class="rate__right") 
+									span(class="icon-heart-on")
+									span(id="like-cant") 7
+									p Likes
+								p(class="rate__left") 
+									span(class="icon-bubbles2") 
+									span(id="comment-cant") 23
+									p Comentarios
+							div(class="item__data--author")
+								strong By:
+								figure
+									img(src="#{personaje.author_avatar}", width="20")
+								p #{personaje.author_name}
+						div(class="item__detalles")
+							span
+								strong Serie/Grupo:
+								p #{personaje.serie_anime}
+							span
+								strong Sexo: 
+								p #{personaje.sexo}
+						div(class="item__action")
+							div(class="action--like")
+								a(href="", class="icon-heart-off  color-gray")
+							div(class="action--comment")
+								input(type="text", placeholder="Añade un Comentario...")
+							div(class="action--settings")
+								a(href="/plataforma/personajes/detalles/#{personaje._id}", class="icon-settings")
+
+script(src="https://cdn.socket.io/socket.io-1.2.0.js")
+script(src="http://code.jquery.com/jquery-1.11.1.js")
+script(type="text/javascript", src="../js/personajes_crud.js")
+script(type="text/javascript", src="../js/menu.js")
