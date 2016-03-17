@@ -6,32 +6,32 @@ Para usarlo primero lo bajamos de github a nuestro computador
 git clone https://github.com/joelengt/appsocial.git
 
 ##Praparando
-Para iniciar debes tener instalado NodeJS, MongoDB, en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta sonde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
-
+Para iniciar debes tener instalado [NodeJS](https://nodejs.org/en/), [MongoDB](https://www.mongodb.org/downloads), en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta sonde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
+```
 npm install
-
+```
 Con este comando bajamos todas las depentencias y modulos de la app.
 
 ##Iniciar/Start
 Nuestra App usa mongoDB, con un modulo mongoose. Necesita conectarse localmente en su sistema operativo.
 En una consola nueva ejecutar 
-
+```
 mongod
-
+```
 *Dependiendo a los permisos de acceso path al instalar mongodb en su ordenador, puede ejecutarlo donde desee, o en donde lo instalo.
 
 Luego, en nuestra primera consola, cuando todo descargo:
-
+```
 npm start
-
+``````
 Con esto ya aplicación correra automaticamente en el puerto 5000:
-
+```
 http://localhost:5000
-
+```
 En todo caso puede correrlo en otro puerto:
-
+```
 PORT=4391 node index.js
-
+```
 ##Desarrollo
 En la carpeta lib, estan los archivos .styl para diseño.
 En el resto de la app esta en forma de Model, View, Controller, Routes, con Express.
