@@ -3,8 +3,9 @@ App CRUD con JavaScript, Nodejs, Express, MongoDB, socket.io, passport.js + jade
 
 ##Descarga/Clone
 Para usarlo primero lo bajamos de github a nuestro computador
+```
 git clone https://github.com/joelengt/appsocial.git
-
+```
 ##Praparando
 Para iniciar debes tener instalado [NodeJS](https://nodejs.org/en/), [MongoDB](https://www.mongodb.org/downloads), en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta sonde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
 ```
