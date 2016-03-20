@@ -1,13 +1,14 @@
 # AppSocial v0.0.1
-App CRUD con JavaScript, Nodejs, Express, MongoDB, socket.io, passport.js + jade, stylus
+App CRUD con JavaScript, Nodejs, Express, MongoDB, socket.io, login passport.js + jade, stylus.
+La app tiene un login social de autentificado, personalizar perfil de usuario(edit) un chat social en tiempo real, publicar personajes favoritos(Full Crud) y hablar con amigos en tiempo real, sistema administrador de mensajes y usuarios (Full CRUD). Toda la data se almanena en una base de datos, en este caso mongodb.
 
 ##Descarga/Clone
 Para usarlo primero lo bajamos de github a nuestro computador
 ```
 git clone https://github.com/joelengt/appsocial.git
 ```
-##Preparando
-Para iniciar debes tener instalado [NodeJS](https://nodejs.org/en/), [MongoDB](https://www.mongodb.org/downloads), en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta sonde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
+##Instalación
+Para iniciar debes tener instalado [NodeJS](https://nodejs.org/en/), [MongoDB](https://www.mongodb.org/downloads), en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta donde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
 ```
 npm install
 ```
