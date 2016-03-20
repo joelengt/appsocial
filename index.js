@@ -4,8 +4,8 @@ var http = require('http').Server(app)
 var io = require('socket.io')(http)
 var mongoose = require('mongoose')
 var passport = require('passport')
-var multer = require("multer")
-var cloudinary = require("cloudinary")
+var multer = require('multer')
+var cloudinary = require('cloudinary')
 
 var path = require('path')
 var logger = require('morgan')
@@ -13,12 +13,12 @@ var favicon = require('serve-favicon')
 var bodyParser = require('body-parser')
 var cookieParser = require('cookie-parser')
 var methodOverride = require('method-override')
-var session = require("express-session")
+var session = require('express-session')
 
 var config = require('./config')
 
 //Connection Mongodb
-mongoose.connect(config.mongodb.connect_local, function (err) {
+mongoose.connect(config.mongodb.mlab, function (err) {
 	if(err) {
 		return console.log('Error al connectar database: ' + err)
 	}
@@ -26,9 +26,9 @@ mongoose.connect(config.mongodb.connect_local, function (err) {
 })
 
 cloudinary.config({
-	cloud_name: 'cromlu',
-	api_key: '532668554832195',
-	api_secret: 'PLstoVjJNoBiqPhNDGriHyVWVTc'
+	cloud_name: config.cloudinary.cloud_name,
+	api_key: config.cloudinary.api_key,
+	api_secret: config.cloudinary.api_secret
 })
 
 app.set('port', process.env.PORT || 5000)
