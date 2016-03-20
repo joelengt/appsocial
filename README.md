@@ -3,7 +3,7 @@ App CRUD con JavaScript, Nodejs, Express, MongoDB, socket.io, login passport.js 
 La app tiene un login social de autentificado, personalizar perfil de usuario(edit) un chat social en tiempo real, publicar personajes favoritos(Full Crud) y hablar con amigos en tiempo real, sistema administrador de mensajes y usuarios (Full CRUD). Toda la data se almanena en una base de datos, en este caso mongodb.
 
 ##Descarga/Clone
-Para usarlo primero lo bajamos de github a nuestro computador
+Para usarlo primero lo bajamos de github a nuestro computador, desde la terminal ejecutando:
 ```
 git clone https://github.com/joelengt/appsocial.git
 ```
