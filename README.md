@@ -7,7 +7,7 @@ Para usarlo primero lo bajamos de github a nuestro computador
 git clone https://github.com/joelengt/appsocial.git
 ```
 ##Instalación
-Para iniciar debes tener instalado [NodeJS](https://nodejs.org/en/), [MongoDB](https://www.mongodb.org/downloads), en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta sonde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
+Para iniciar debes tener instalado [NodeJS](https://nodejs.org/en/), [MongoDB](https://www.mongodb.org/downloads), en tu Sistema Operativo. Al tener todo, nos ubicamos en la carpeta donde guardamos la app, mediante la terminal/consola. Una vez alli ejecutar:
 ```
 npm install
 ```
